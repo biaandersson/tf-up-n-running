@@ -1,5 +1,5 @@
 module "webserver_cluster" {
-  source                 = "../../../modules/services/webserver-cluster"
+  source                 = "github.com/biaandersson/tf-up-n-running/tree/production/modules/services/webserver-cluster"
   cluster_name           = "sportsbook-sbapi-cluster"
   db_remote_state_bucket = "sb-cluster-bucket"
   db_remote_state_key    = "prod/db/mysql/terraform.state"
